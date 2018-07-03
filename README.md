@@ -1,5 +1,7 @@
 # WDIO ChromeDriver service
 
+[![Build Status](https://travis-ci.com/CoorpAcademy/wdio-chromedriver-service.svg?branch=master)](https://travis-ci.com/CoorpAcademy/wdio-chromedriver-service)
+
 This service help you to run chromedriver from npm package or from local install when runnings test with WDIO.
 
 ## Installation
