@@ -1,0 +1,3 @@
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+b
+@coorpacademy:registry=http://registry.npmjs.org/
