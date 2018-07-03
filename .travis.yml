@@ -1,15 +1,21 @@
 language: node_js
 node_js:
-  - "stable"
-
+- stable
 sudo: required
-
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   chrome: stable
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
+    - g++-4.8
+deploy:
+  provider: npm
+  email: system@coorpacademy.com
+  api_key:
+    secure: U2FmhXesIbKtNkuYteJTYmyiPEmHGx+ajjGRVH1u3LdH38nKCAm94IWpl1PVN/7aEdzFlzlHGEF54zkQ3YoHqHNy3KjdsIrs4MyEXq3BNU8/q+yVABJgDw9nn5Kww6LK/KcmelyOKqmmUKMn+mplHgh5ZSebvHSYd+4N+uw2PoUiI48S7pMbQXPoqobFqy6e+eF9DZWT/Ykuq2lrTyAFQIJJsCeJbWkBW+lfK7ykE6vs5nZ1imTzBGiO7leRNeNKF7b3VVLaHm60abKK0R7U7DSKDQnHKTxAjyuGtNzSDYgQMVPeM5KGg5SAZd4+Pta1fVxYatkLnho9c6ajTtJ41rlkTBZqkNTFI2lUAgTO4bj2OC30YM2NiZamPZHtKZjB6LIrpuh/W57376V2/w5JZx3SbEtrx6UZf5AMSO60WSDqQIcp7YLKTMopudG+EeveazSQbp7yQvqdRjAZZgmEtwUvfMvUqX/uhj/ZUO2yrQkiO8NIZ1sqT6ZdQ9IdpIwfe4pjbpz33ibzrCYcgy6NJLr1Uv7mrx+IxWDX/3NtUP5i7sSmRs+FHtEDqU1cZ564NGvyh6hJnN71scdDV2HDVN7X4xmOnPaBU+gyGyYQNMy9CKq89aVrNjpuk14mr1XP6+9N0+A28/7BNnyg155tYedDbczVn7OxNtaZgDM5W6k=
+  on:
+    tags: true
+    repo: CoorpAcademy/wdio-chromedriver-service
