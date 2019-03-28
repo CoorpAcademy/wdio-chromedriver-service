@@ -1,9 +1,10 @@
 const assert = require('assert');
 
 describe('webdriver.io page', function() {
-  it('should have the right title - the fancy generator way', function() {
+  it('should have the right title - the fancy generator way', async function() {
     browser.url('/');
-    const title = browser.getTitle();
-    assert.equal(title, 'WebdriverIO - WebDriver bindings for Node.js');
+    const title = await browser.getTitle();
+
+    assert.equal(title, 'WebdriverIO · Next-gen WebDriver test framework for Node.js');
   });
 });

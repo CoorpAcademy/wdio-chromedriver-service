@@ -3,11 +3,11 @@ const ChromeDriver = require('chromedriver');
 
 exports.config = {
   host: '0.0.0.0',
-  port: '9516',
+  port: 9516,
   path: '/',
 
   specs: ['./test/test.mocha.js'],
-  services: [new ChromeDriverService()],
+  services: [[ChromeDriverService, {}]],
   chromeDriverArgs: ['--port=9516'],
   chromeDriverPath: ChromeDriver.path,
   capabilities: [
