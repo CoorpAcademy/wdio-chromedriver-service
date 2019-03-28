@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@coorpacademy/eslint-plugin-coorpacademy": "^8.1.1",
+    "@wdio/spec-reporter": "^5.7.2",
     "chromedriver": "^2.40.0",
     "eslint": "^5.0.1"
   }
