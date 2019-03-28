@@ -1,5 +1,6 @@
 # WDIO ChromeDriver service
 
+[![Npm version](https://img.shields.io/npm/v/@coorpacademy/wdio-chromedriver-service.svg)](https://www.npmjs.com/package/@coorpacademy/wdio-chromedriver-service)
 [![Build Status](https://travis-ci.com/CoorpAcademy/wdio-chromedriver-service.svg?branch=master)](https://travis-ci.com/CoorpAcademy/wdio-chromedriver-service)
 
 This service help you to run chromedriver from npm package or from local install when runnings test with WDIO.
@@ -17,10 +18,10 @@ const ChromeDriverService = require('@coorpacademy/wdio-chromedriver-service');
 
 exports.config = {
   host: '0.0.0.0',
-  port: '9515',
+  port: 9515,
   path: '/',
 
-  services: [new ChromeDriverService()],
+  services: [[ChromeDriverService, {}]],
 
   chromeDriverArgs: ['--port=9516'],
   chromeDriverPath: '/usr/bin/chromedriver',
